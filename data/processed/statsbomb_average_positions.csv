@@ -1,0 +1,134 @@
+player_id,player_name,position,x,y,n_touches,is_goalkeeper,reliable,window,phase,in_shape
+5055,Lynn Williams Biyendolo,Center Forward,4.989941860465116,3.098546511627907,430,False,True,early_regular_season,out_of_possession,True
+123476,Yazmeen Ryan,Right Midfield,0.074022511848341,4.218175355450237,422,False,True,early_regular_season,out_of_possession,True
+31936,Kristie Mewis,Left Center Midfield,-1.085331978319783,-4.550840108401084,369,False,True,early_regular_season,out_of_possession,True
+5001,Allie Long,Center Defensive Midfield,-7.355608974358975,-0.10316239316239356,234,False,True,early_regular_season,out_of_possession,True
+389497,Jenna Nighswonger,Left Back,-16.214695945945945,-21.004954954954957,222,False,True,early_regular_season,out_of_possession,True
+328259,Bruna Santos Nhaia,Right Back,-18.416761363636365,9.337250000000001,220,False,True,early_regular_season,out_of_possession,True
+5089,Ali Krieger,Right Center Back,-24.74571917808219,11.189726027397262,219,False,True,early_regular_season,out_of_possession,True
+5021,Kelley Maureen O'Hara,Right Back,-13.223858173076923,15.61548076923077,208,False,True,early_regular_season,out_of_possession,True
+5068,Kristen Edmonds,Left Center Back,-23.084634146341465,-15.03960975609756,205,False,True,early_regular_season,out_of_possession,True
+389494,Sinead Farrelly,Right Center Midfield,-2.403971354166667,7.9528125,192,False,True,early_regular_season,out_of_possession,True
+5091,McCall Zerboni,Left Center Midfield,-1.2017578125000001,4.411588541666666,192,False,True,early_regular_season,out_of_possession,False
+5031,Abby Smith,Goalkeeper,-46.38865606936416,1.0863294797687861,173,True,True,early_regular_season,out_of_possession,False
+4941,Taylor Smith,Left Wing,-5.425587248322148,-2.5893624161073823,149,False,True,early_regular_season,out_of_possession,False
+130020,Delanie Sheehan,Center Forward,4.669078947368422,2.89703007518797,133,False,True,early_regular_season,out_of_possession,False
+107494,Nealy Martin,Center Defensive Midfield,-8.601490825688073,2.343348623853211,109,False,True,early_regular_season,out_of_possession,False
+5094,Ifeoma Onumonu,Left Midfield,1.277669902912622,4.160873786407767,103,False,True,early_regular_season,out_of_possession,False
+62960,Ellie Charlotte Jean,Left Center Back,-19.142613636363635,-10.479147727272727,88,False,True,early_regular_season,out_of_possession,False
+4974,Mandy Freeman,Right Center Back,-24.029833333333332,2.3732,75,False,True,early_regular_season,out_of_possession,False
+5009,Margaret Purce,Left Midfield,4.603320312499998,1.2909375,64,False,True,early_regular_season,out_of_possession,False
+80693,Svava Rós Guðmundsdóttir,Center Forward,4.802083333333334,-5.472380952380952,42,False,True,early_regular_season,out_of_possession,False
+107587,Victoria Pickett,Left Center Midfield,-1.060294117647059,4.907500000000001,34,False,True,early_regular_season,out_of_possession,False
+41953,Amanda Kathleen McGlynn,Goalkeeper,-44.70852272727273,0.9504545454545454,22,True,False,early_regular_season,out_of_possession,False
+4994,Nahomi Kawasumi,Left Center Midfield,-2.3999999999999986,-14.085714285714287,7,False,False,early_regular_season,out_of_possession,False
+33318,Sabrina Inés Flores Grigoriu,Left Midfield,2.5375000000000005,-12.835000000000003,1,False,False,early_regular_season,out_of_possession,False
+389497,Jenna Nighswonger,Left Back,-11.224715909090909,-20.730064935064934,308,False,True,late_regular_season,out_of_possession,True
+130020,Delanie Sheehan,Left Center Midfield,5.099664429530201,-0.5604865771812079,298,False,True,late_regular_season,out_of_possession,True
+107494,Nealy Martin,Center Defensive Midfield,-6.667869718309859,-0.051179577464788586,284,False,True,late_regular_season,out_of_possession,True
+123476,Yazmeen Ryan,Right Center Midfield,1.6915624999999999,7.157303571428572,280,False,True,late_regular_season,out_of_possession,True
+50356,Maitane López Millán,Right Center Back,-19.83943181818182,6.428318181818182,220,False,True,late_regular_season,out_of_possession,True
+5055,Lynn Williams Biyendolo,Left Wing,2.9971774193548386,-3.108571428571429,217,False,True,late_regular_season,out_of_possession,True
+5009,Margaret Purce,Right Wing,2.116279069767441,4.728866279069767,172,False,True,late_regular_season,out_of_possession,True
+389494,Sinead Farrelly,Right Center Midfield,0.015261627906976393,6.270232558139535,172,False,True,late_regular_season,out_of_possession,True
+5089,Ali Krieger,Left Center Back,-26.048903508771932,-9.069649122807018,171,False,True,late_regular_season,out_of_possession,True
+328259,Bruna Santos Nhaia,Right Back,-14.604795597484276,15.45503144654088,159,False,True,late_regular_season,out_of_possession,True
+4972,Katherine Nicole Stengel,Center Forward,13.723295454545454,0.5591233766233765,154,False,True,late_regular_season,out_of_possession,False
+62960,Ellie Charlotte Jean,Right Center Back,-22.577099999999998,1.98356,125,False,True,late_regular_season,out_of_possession,False
+50146,Esther Gonzalez Rodríguez,Center Forward,14.832758620689654,-1.1584913793103444,116,False,True,late_regular_season,out_of_possession,False
+5001,Allie Long,Center Defensive Midfield,-13.966471962616824,1.7579906542056074,107,False,True,late_regular_season,out_of_possession,False
+4974,Mandy Freeman,Right Back,-20.416973684210525,16.853263157894737,95,False,True,late_regular_season,out_of_possession,False
+41953,Amanda Kathleen McGlynn,Goalkeeper,-45.96170212765957,0.11393617021276593,94,True,True,late_regular_season,out_of_possession,False
+5068,Kristen Edmonds,Right Back,-11.078666666666667,16.598799999999997,75,False,True,late_regular_season,out_of_possession,False
+5091,McCall Zerboni,Center Attacking Midfield,0.4255136986301366,8.53376712328767,73,False,True,late_regular_season,out_of_possession,False
+5031,Abby Smith,Goalkeeper,-46.18375,1.5627857142857149,70,True,True,late_regular_season,out_of_possession,False
+5021,Kelley Maureen O'Hara,Right Wing,-9.3984375,21.583928571428572,56,False,True,late_regular_season,out_of_possession,False
+5094,Ifeoma Onumonu,Left Wing,6.800000000000002,-3.6064285714285718,56,False,True,late_regular_season,out_of_possession,False
+31936,Kristie Mewis,Left Center Midfield,-7.650416666666666,1.4931666666666656,30,False,True,late_regular_season,out_of_possession,False
+5040,Meleana Shim,Left Wing,-2.3836206896551735,-0.9906896551724136,29,False,False,late_regular_season,out_of_possession,False
+80693,Svava Rós Guðmundsdóttir,Right Wing,11.904374999999998,25.36825,20,False,False,late_regular_season,out_of_possession,False
+4994,Nahomi Kawasumi,Center Forward,13.937500000000002,3.8857142857142852,7,False,False,late_regular_season,out_of_possession,False
+5055,Lynn Williams Biyendolo,Left Midfield,4.253365384615384,-4.992115384615384,182,False,True,playoffs,out_of_possession,True
+130020,Delanie Sheehan,Left Center Midfield,3.740951492537313,-3.6657835820895524,134,False,True,playoffs,out_of_possession,True
+123476,Yazmeen Ryan,Right Center Midfield,2.259153543307087,10.458346456692913,127,False,True,playoffs,out_of_possession,True
+389497,Jenna Nighswonger,Left Back,-14.331249999999999,-19.954761904761906,126,False,True,playoffs,out_of_possession,True
+5009,Margaret Purce,Left Wing,-0.73215811965812,-3.73491452991453,117,False,True,playoffs,out_of_possession,True
+107494,Nealy Martin,Center Defensive Midfield,-7.032717391304348,1.742869565217391,115,False,True,playoffs,out_of_possession,True
+50356,Maitane López Millán,Right Center Back,-17.57061403508772,11.017938596491229,114,False,True,playoffs,out_of_possession,True
+5089,Ali Krieger,Left Center Back,-18.235875,-4.87305,100,False,True,playoffs,out_of_possession,True
+50146,Esther Gonzalez Rodríguez,Center Forward,7.8209269662921335,2.2090449438202246,89,False,True,playoffs,out_of_possession,True
+328259,Bruna Santos Nhaia,Right Back,-14.279573170731707,25.745670731707317,82,False,True,playoffs,out_of_possession,True
+389494,Sinead Farrelly,Right Center Midfield,-3.8202499999999997,4.2721,50,False,True,playoffs,out_of_possession,False
+41953,Amanda Kathleen McGlynn,Goalkeeper,-46.0125,1.384285714285714,42,True,True,playoffs,out_of_possession,False
+4972,Katherine Nicole Stengel,Center Forward,8.458333333333332,-10.501041666666667,24,False,False,playoffs,out_of_possession,False
+31936,Kristie Mewis,Right Center Midfield,-3.849999999999999,-2.6845833333333338,24,False,False,playoffs,out_of_possession,False
+5001,Allie Long,Center Defensive Midfield,-0.8034090909090921,12.672727272727274,11,False,False,playoffs,out_of_possession,False
+5021,Kelley Maureen O'Hara,Right Midfield,-5.949999999999999,18.936111111111114,9,False,False,playoffs,out_of_possession,False
+5068,Kristen Edmonds,Left Back,-48.475,-25.84,1,False,False,playoffs,out_of_possession,False
+5055,Lynn Williams Biyendolo,Center Forward,18.01768899204244,1.2798474801061008,1508,False,True,early_regular_season,in_possession,True
+31936,Kristie Mewis,Left Center Midfield,7.998984771573604,-5.657523567802756,1379,False,True,early_regular_season,in_possession,True
+123476,Yazmeen Ryan,Right Midfield,14.807620320855614,4.228376623376623,1309,False,True,early_regular_season,in_possession,True
+328259,Bruna Santos Nhaia,Right Back,2.0058493589743587,13.663360805860805,1092,False,True,early_regular_season,in_possession,True
+5068,Kristen Edmonds,Left Center Back,-12.666164611005692,-16.24685483870968,1054,False,True,early_regular_season,in_possession,True
+5089,Ali Krieger,Right Center Back,-17.633032915360502,11.286614420062698,957,False,True,early_regular_season,in_possession,True
+5001,Allie Long,Center Defensive Midfield,-3.611086956521739,-2.1520706521739132,920,False,True,early_regular_season,in_possession,True
+389497,Jenna Nighswonger,Left Back,5.472653534183082,-22.124918887601392,863,False,True,early_regular_season,in_possession,True
+5031,Abby Smith,Goalkeeper,-40.4900928297055,0.010448143405890176,781,True,True,early_regular_season,in_possession,False
+5021,Kelley Maureen O'Hara,Right Back,-1.4223015320334262,16.42110027855153,718,False,True,early_regular_season,in_possession,True
+389494,Sinead Farrelly,Right Center Midfield,8.234095900439238,5.970409956076135,683,False,True,early_regular_season,in_possession,True
+130020,Delanie Sheehan,Center Forward,13.468730529595014,7.026534267912773,642,False,True,early_regular_season,in_possession,False
+4941,Taylor Smith,Left Wing,12.277616279069768,2.701926910299003,602,False,True,early_regular_season,in_possession,False
+62960,Ellie Charlotte Jean,Left Center Back,-18.388011152416357,-9.90550185873606,538,False,True,early_regular_season,in_possession,False
+5091,McCall Zerboni,Right Center Midfield,9.4467529296875,0.4947265625000001,512,False,True,early_regular_season,in_possession,False
+5094,Ifeoma Onumonu,Left Midfield,20.955862831858404,5.319395280235987,339,False,True,early_regular_season,in_possession,False
+107494,Nealy Martin,Center Defensive Midfield,-1.296449704142012,5.109053254437869,338,False,True,early_regular_season,in_possession,False
+4974,Mandy Freeman,Right Center Back,-15.53140243902439,9.73205574912892,287,False,True,early_regular_season,in_possession,False
+5009,Margaret Purce,Right Wing,20.623966942148762,-6.035,242,False,True,early_regular_season,in_possession,False
+107587,Victoria Pickett,Right Center Midfield,6.793297101449275,4.557355072463769,138,False,True,early_regular_season,in_possession,False
+80693,Svava Rós Guðmundsdóttir,Center Forward,17.878356481481482,1.1097222222222225,108,False,True,early_regular_season,in_possession,False
+41953,Amanda Kathleen McGlynn,Goalkeeper,-39.45227272727273,-1.5465584415584412,77,True,True,early_regular_season,in_possession,False
+4994,Nahomi Kawasumi,Left Center Midfield,32.01985294117647,-23.575,17,False,False,early_regular_season,in_possession,False
+33318,Sabrina Inés Flores Grigoriu,Left Midfield,12.862500000000006,-32.5975,2,False,False,early_regular_season,in_possession,False
+130020,Delanie Sheehan,Left Center Midfield,12.23157313997478,0.5383511979823454,1586,False,True,late_regular_season,in_possession,True
+389497,Jenna Nighswonger,Left Back,3.740866948601171,-20.91331815224463,1537,False,True,late_regular_season,in_possession,True
+123476,Yazmeen Ryan,Right Center Midfield,11.990130637079456,5.254727988546887,1397,False,True,late_regular_season,in_possession,True
+328259,Bruna Santos Nhaia,Right Back,3.6751611418047885,19.903618784530384,1086,False,True,late_regular_season,in_possession,True
+50356,Maitane López Millán,Right Center Back,-12.215512195121951,11.595409756097562,1025,False,True,late_regular_season,in_possession,True
+5055,Lynn Williams Biyendolo,Left Wing,18.94986466535433,-1.8607135826771652,1016,False,True,late_regular_season,in_possession,True
+107494,Nealy Martin,Center Defensive Midfield,1.1793362156663274,1.3984791454730416,983,False,True,late_regular_season,in_possession,True
+5089,Ali Krieger,Left Center Back,-13.528036322360954,-13.071089670828602,881,False,True,late_regular_season,in_possession,True
+389494,Sinead Farrelly,Right Center Midfield,15.834762202753442,11.096063829787234,799,False,True,late_regular_season,in_possession,True
+5009,Margaret Purce,Right Wing,19.765920881971464,8.056699092088197,771,False,True,late_regular_season,in_possession,True
+62960,Ellie Charlotte Jean,Right Center Back,-16.494370078740157,-0.8339370078740155,635,False,True,late_regular_season,in_possession,False
+4972,Katherine Nicole Stengel,Center Forward,19.795203025477708,1.9463375796178344,628,False,True,late_regular_season,in_possession,False
+41953,Amanda Kathleen McGlynn,Goalkeeper,-36.930121237458195,0.9418227424749165,598,True,True,late_regular_season,in_possession,False
+5001,Allie Long,Center Defensive Midfield,-6.71566317626527,-5.157260034904014,573,False,True,late_regular_season,in_possession,False
+50146,Esther Gonzalez Rodríguez,Center Forward,17.539056513409964,-1.5026436781609196,522,False,True,late_regular_season,in_possession,False
+5068,Kristen Edmonds,Right Back,1.5595149253731346,15.78861407249467,469,False,True,late_regular_season,in_possession,False
+4974,Mandy Freeman,Right Back,-7.950725593667546,20.657242744063325,379,False,True,late_regular_season,in_possession,False
+5021,Kelley Maureen O'Hara,Right Wing,12.360675675675676,13.952635135135136,370,False,True,late_regular_season,in_possession,False
+5031,Abby Smith,Goalkeeper,-38.94136740331491,-0.15779005524861855,362,True,True,late_regular_season,in_possession,False
+31936,Kristie Mewis,Left Center Midfield,10.868617021276595,-4.635212765957447,235,False,True,late_regular_season,in_possession,False
+5091,McCall Zerboni,Center Attacking Midfield,8.173733480176212,6.804118942731278,227,False,True,late_regular_season,in_possession,False
+5094,Ifeoma Onumonu,Left Wing,23.59988789237668,-5.607331838565022,223,False,True,late_regular_season,in_possession,False
+5040,Meleana Shim,Left Wing,16.985247747747746,-14.662882882882883,111,False,True,late_regular_season,in_possession,False
+4994,Nahomi Kawasumi,Center Attacking Midfield,14.307932692307691,-4.6700961538461545,52,False,True,late_regular_season,in_possession,False
+80693,Svava Rós Guðmundsdóttir,Right Wing,15.399999999999999,14.488452380952381,42,False,True,late_regular_season,in_possession,False
+50356,Maitane López Millán,Right Center Back,-20.53996913580247,16.12031746031746,567,False,True,playoffs,in_possession,True
+328259,Bruna Santos Nhaia,Right Back,-0.9173214285714283,25.66774489795918,490,False,True,playoffs,in_possession,True
+123476,Yazmeen Ryan,Right Center Midfield,12.368598233995586,15.591026490066225,453,False,True,playoffs,in_possession,True
+130020,Delanie Sheehan,Left Center Midfield,8.92027027027027,0.98018018018018,444,False,True,playoffs,in_possession,True
+389497,Jenna Nighswonger,Left Back,4.228000000000001,-22.6922,425,False,True,playoffs,in_possession,True
+41953,Amanda Kathleen McGlynn,Goalkeeper,-40.28302283653846,1.4484735576923078,416,True,True,playoffs,in_possession,False
+5055,Lynn Williams Biyendolo,Left Midfield,16.866125954198473,-5.981577608142494,393,False,True,playoffs,in_possession,True
+50146,Esther Gonzalez Rodríguez,Center Forward,11.045244215938304,1.6104113110539846,389,False,True,playoffs,in_possession,True
+5089,Ali Krieger,Left Center Back,-17.79131736526946,-12.526047904191616,334,False,True,playoffs,in_possession,True
+107494,Nealy Martin,Center Defensive Midfield,-1.3373828125,3.3946875,320,False,True,playoffs,in_possession,True
+5009,Margaret Purce,Right Midfield,19.009512578616352,2.5427830188679246,318,False,True,playoffs,in_possession,True
+389494,Sinead Farrelly,Right Center Midfield,13.235185185185186,-1.3607870370370367,108,False,True,playoffs,in_possession,False
+31936,Kristie Mewis,Right Center Midfield,3.5797222222222236,-1.5942222222222224,45,False,True,playoffs,in_possession,False
+4972,Katherine Nicole Stengel,Center Forward,16.268597560975607,7.334878048780488,41,False,True,playoffs,in_possession,False
+5021,Kelley Maureen O'Hara,Right Midfield,23.345,22.59725,20,False,False,playoffs,in_possession,False
+5001,Allie Long,Center Defensive Midfield,-12.27692307692308,-11.795384615384616,13,False,False,playoffs,in_possession,False
+5068,Kristen Edmonds,Left Back,-12.483333333333334,-28.999166666666667,6,False,False,playoffs,in_possession,False
+62960,Ellie Charlotte Jean,Right Center Back,-2.012500000000001,24.28875,4,False,False,playoffs,in_possession,False

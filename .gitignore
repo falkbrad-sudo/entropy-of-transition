@@ -1,8 +1,17 @@
 # Data: never commit downloaded datasets, even public ones (repo size + licensing)
 data/external/
-data/processed/
 data/raw/
 !data/**/.gitkeep
+
+# Processed outputs stay local too, except the derived tables the Streamlit app
+# reads, so the deployed app runs from a clone (see README, Deploying the app)
+data/processed/*
+!data/processed/metrica_counter_attacks.csv
+!data/processed/metrica_sequence_timeseries.csv
+!data/processed/metrica_sequence_positions.csv
+!data/processed/statsbomb_average_positions.csv
+!data/processed/statsbomb_formation_windows.csv
+!data/processed/statsbomb_formation_by_match.csv
 
 # Python
 __pycache__/

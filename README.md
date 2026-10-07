@@ -51,7 +51,8 @@ entropy-of-transition/
 ├── tests/
 ├── scripts/
 │   └── download_data.sh # fetches both datasets into data/external
-└── data/                # gitignored except .gitkeep; populated by scripts/download_data.sh
+└── data/                # populated by scripts/download_data.sh + src.pipeline; only the
+                         #   6 data/processed/ tables the app reads are committed
 ```
 
 ## Setup
@@ -72,6 +73,16 @@ pytest -m integration                  # also checks the real data, pipeline out
 
 Every number in **Findings** below is produced by these commands; nothing is
 hand-entered or picked after the fact.
+
+### Deploying the app
+
+The app needs no raw data: it reads six derived tables from `data/processed/`
+that are committed to the repo (whitelisted in `.gitignore`), plus the GIFs in
+`reports/figures/`. To deploy on [Streamlit Community Cloud](https://share.streamlit.io):
+**Create app** → this repo, branch `main`, main file `app/streamlit_app.py`,
+and under **Advanced settings** choose Python 3.11 (the version CI tests).
+After re-running the pipeline, commit the updated tables so the deployed app
+matches the Findings.
 
 ## Findings
 

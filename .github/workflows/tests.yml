@@ -18,3 +18,5 @@ jobs:
         run: ruff check .
       - name: Run unit tests (excludes integration tests requiring real data)
         run: pytest -m "not integration"
+      - name: Run app tests (on the committed data/processed/ tables)
+        run: pytest tests/test_app.py -m integration

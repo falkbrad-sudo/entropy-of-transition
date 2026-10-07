@@ -1,7 +1,8 @@
 """Interactive demo: The Entropy of Transition.
 
 Run with: streamlit run app/streamlit_app.py
-(after `python -m src.pipeline`; `python -m src.figures` adds the animations)
+(the tables it reads are committed; `python -m src.pipeline` regenerates them,
+and `python -m src.figures` the animations)
 
 Goal: let a non-technical viewer (a coach, a GM, a fan) step through real
 counter-attacks and see how the defending team's shape changes, without
