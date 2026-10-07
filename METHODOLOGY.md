@@ -1,6 +1,6 @@
 # Methodology and data principles
 
-This project treats a soccer defense's shape as a particle system and measures how its organization (entropy, dispersion, Voronoi territory, pitch control) changes during transitions, especially counter-attacks. Its value depends on every claim being checkable, so this document sets out the principles the analysis follows and the conventions that keep it that way. The Roadmap in the README records what is built.
+This project treats a soccer defense's shape as a particle system and measures how its organization (entropy, dispersion, Voronoi territory, pitch control) changes during transitions, especially counter-attacks. Its value depends on every claim being checkable, so this document sets out the principles the analysis follows and the conventions that keep it that way. The README's Limitations and next steps section records what is still open.
 
 ## Principles
 

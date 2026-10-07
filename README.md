@@ -360,23 +360,31 @@ the average single match (out of possession: pooled length ≈ 30 m vs.
   [mplsoccer](https://github.com/andrewRowlinson/mplsoccer) (pitch drawing),
   scipy (Voronoi, Welch's t-test).
 
-## Roadmap
+## Limitations and next steps
 
-- [x] `src/data/metrica_loader.py`: load tracking + event data for all 3 Metrica sample games *(game 3 tracking via kloppy; its events parsed from JSON into the same schema)*
-- [x] `src/data/statsbomb_loader.py`: load full 2023 NWSL event data *(from a local sparse clone of statsbomb/open-data, not `statsbombpy` at runtime)*
-- [x] `src/features/entropy.py`: frame-level positional entropy and dispersion time series (Metrica data)
-- [x] `src/features/voronoi.py`: Voronoi territory control per frame (Metrica data) *(pure nearest-player territory)*
-- [x] `src/features/pitch_control.py`: Spearman (2018) pitch control, vectorized over the pitch grid (Findings 1d)
-- [x] `src/features/formation.py`: window/per-match average-position compactness (StatsBomb data)
-- [x] `src/pipeline.py`: orchestrate: load → clean → compute features → save results *(`python -m src.pipeline` writes 15 CSVs to `data/processed/`; ~2 min. Control windows are computed only at the frames the baseline reads, which gives the same values as full series)*
-- [x] `src/viz/pitch_plots.py` + `animations.py`: static and animated pitch visualizations *(GIF via Pillow; MP4 needs ffmpeg)*
-- [x] `app/streamlit_app.py`: interactive demo *(tested with Streamlit's AppTest)*
-- [x] Identify 2-3 real counter-attack sequences in the Metrica data to use as headline examples *(3 of 8 detected, curated with stated criteria in `config.yaml`)*
-- [x] Identify a real "structural evolution" case study in the 2023 NWSL data (e.g., Gotham FC's shape earlier vs. later in their title run) *(done: the result is null, see Findings)*
-- [x] Write up findings in a final report section of the README
-- [x] Baseline: compare counter-attacks with duration-matched own-half recoveries that produced no shot (`src/features/baseline.py`; see Findings 1b)
-- [x] Ball-depth-matched baseline: controls whose ball got as deep as the counter's (Findings 1b)
-- [x] Sensitivity of the findings to the counter-attack thresholds (`python -m src.sensitivity`; Findings 1c)
+- **Sample size.** The tracking findings rest on 8 counter-attacks from 3
+  anonymized matches. The depth-matched baseline has only 16 distinct
+  controls, and controls are reused across counters, so its tests have
+  little power and the p-values are somewhat optimistic (Findings 1b). The
+  most useful next step is the same pipeline on more matches.
+- **A lead to test, not a finding.** Under the loosest counter-attack rule
+  (16 counters), counters are narrower and longer than defending-third
+  controls (p = 0.0025 and 0.0008) and keep less control of their own third
+  (p = 0.0010; 0.0013 with a 20 s cap), all passing the corrected threshold.
+  Against depth-matched controls nothing passes; width comes closest
+  (p = 0.0065). These come from 144 exploratory tests (Findings 1c), so they
+  need confirming on new data with the rule fixed in advance.
+- **Pitch-control parameters are not fitted.** The model uses Laurie Shaw's
+  published defaults (reaction time, maximum speed, control rates). Fitting
+  them to these players, for example by maximizing the likelihood of
+  observed pass outcomes, would make the control surfaces specific to this
+  data (Findings 1d).
+- **The season-scale question needs better data.** The Gotham result is
+  null, and event-position averages may be too coarse to show a shape change
+  (Findings 2). Per-event positions of all visible players (StatsBomb 360,
+  which the free 2023 NWSL release does not include) or tracking data would
+  make it answerable; the next section describes how a tracking source would
+  plug in.
 
 ## Extending this to a club's own tracking data
 
@@ -384,4 +392,4 @@ the average single match (out of possession: pooled length ≈ 30 m vs.
 
 ## Methodology
 
-See `METHODOLOGY.md` for the data principles, code conventions and scope guardrails. The Roadmap above is the record of what is built.
+See `METHODOLOGY.md` for the data principles, code conventions and scope guardrails.
