@@ -1,0 +1,17 @@
+# Core data handling
+pandas>=2.2
+numpy>=1.26
+scipy>=1.12
+pyyaml>=6.0
+
+# Soccer-specific data access and visualization
+# (StatsBomb events are read from a local clone of statsbomb/open-data; see scripts/download_data.sh)
+mplsoccer>=1.3
+kloppy>=3.16          # standardized reader for Metrica EPTS-format tracking data
+
+# App
+streamlit>=1.32
+
+# Dev / quality
+pytest>=8.0
+ruff>=0.4

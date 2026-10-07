@@ -1,0 +1,40 @@
+# Data: never commit downloaded datasets, even public ones (repo size + licensing)
+data/external/
+data/processed/
+data/raw/
+!data/**/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode
+.idea
+
+# Local shell / tool config: keep out of a public repo
+.bashrc
+.bash_profile
+.profile
+.zshrc
+.zprofile
+.gitconfig
+.ripgreprc
+.mcp.json
+.gitmodules
+.claude/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local AI-assistant notes, not published (see METHODOLOGY.md)
+CLAUDE.md

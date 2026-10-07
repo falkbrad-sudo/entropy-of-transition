@@ -1,0 +1,89 @@
+# Project configuration. Loaded by src/config.py.
+
+paths:
+  data_external: "data/external"
+  data_processed: "data/processed"
+  metrica_dir: "data/external/metrica"
+  statsbomb_dir: "data/external/statsbomb"
+
+statsbomb:
+  competition_id: 49   # NWSL
+  season_id: 107        # 2023 season (the free release also has NWSL 2018, season_id 3, unused here)
+  # Do not add additional teams/seasons here without first confirming the data
+  # actually exists in the free release (see METHODOLOGY.md, principle 2).
+
+metrica:
+  # Metrica's open sample-data repo ships 3 games; game 3 uses the newer
+  # EPTS/JSON format (read via kloppy), games 1-2 use Metrica's own CSV format.
+  game_ids: [1, 2, 3]
+
+cleaning:
+  # validate_coordinates() tolerance beyond the pitch lines. Real tracking puts
+  # players up to ~6 m past the goal line (corners) and ~3.4 m past the
+  # touchline (throw-ins) in Metrica game 1, so 1 m is too strict for it.
+  tracking_margin_m: 10
+
+features:
+  sequences:
+    # Rule-based counter-attack definition; see src/data/sequences.py.
+    # These are tunable thresholds, not an established definition.
+    min_seconds: 3
+    max_seconds: 15
+    max_recovery_x_m: 0      # 0 = recovery in the attacking team's own half
+    pre_seconds: 2           # context included before the recovery in outputs
+  pitch_control:
+    # Spearman (2018) pitch control - see src/features/pitch_control.py (model
+    # parameters are Shaw's published defaults, set there). It costs ~30 ms a
+    # frame, so counter-attack series get it every Nth frame (5 = 5 per second)
+    # plus the recovery and shot frames; control windows get it at every frame
+    # the baseline reads.
+    counter_frame_step: 5
+  baseline:
+    # Counter-attacks vs. own-half recoveries with no shot, matched on time
+    # since the recovery - see src/features/baseline.py.
+    ball_x_max_m: -17.5      # "ball in defending third": ball x <= -17.5 m in the defending frame
+    depth_caliper_m: 10      # "ball depth matched": control ball within 10 m of the counter's ball at the shot
+    n_permutations: 20000
+    seed: 0
+  sensitivity:
+    # Variants of the counter-attack rule for `python -m src.sensitivity`.
+    # Each changes features.sequences one threshold at a time (plus one
+    # loosest-of-all combination); unlisted keys keep the defaults above.
+    variants:
+      default: {}
+      min_2s: {min_seconds: 2}
+      min_5s: {min_seconds: 5}
+      max_10s: {max_seconds: 10}
+      max_20s: {max_seconds: 20}
+      own_third_recoveries: {max_recovery_x_m: -17.5}   # recovered in the own defensive third
+      recoveries_to_10m: {max_recovery_x_m: 10}         # up to 10 m into the opponent's half
+      loosest: {min_seconds: 2, max_seconds: 20, max_recovery_x_m: 10}
+  formation:
+    # StatsBomb aggregate-shape proxy; see src/features/formation.py.
+    team: "NJ/NY Gotham FC"    # StatsBomb's exact name for Gotham FC
+    phases: ["out_of_possession", "in_possession"]
+    n_outfield: 10             # shape = the 10 most-involved reliable outfielders
+    min_touches_window: 30     # per player, per multi-match window
+    min_touches_match: 5       # per player, per single match (season trend)
+    # Windows by StatsBomb match_week (inclusive). Gotham's weeks 23-25 are
+    # the 2023 playoffs (1st Round, Semi-final, Final).
+    windows:
+      early_regular_season: [1, 11]
+      late_regular_season: [12, 22]
+      playoffs: [23, 25]
+
+headlines:
+  # Hand-curated from data/processed/metrica_counter_attacks.csv (keyed by
+  # game + recovery frame, so they survive changes to sequence numbering).
+  # Selection criteria are stated so the choice can be checked, not just trusted.
+  sequences:
+    - game_id: 1
+      start_frame: 9354
+      reason: "Clearest example of the typical pattern: largest length growth in game 1 (141 -> 445 m^2) while width collapses (130 -> 48 m^2)."
+    - game_id: 2
+      start_frame: 52694
+      reason: "The only detected counter-attack that ends in a goal."
+    - game_id: 3
+      start_frame: 86927
+      reason: "Deepest recovery (inside the own box) and longest counter (14.7 s) - and a counter-example: the defense gets shorter, not longer."
+  animation_frame_step: 2   # render every 2nd frame (12.5 fps) to keep GIFs small
